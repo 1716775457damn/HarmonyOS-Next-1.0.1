@@ -9,25 +9,6 @@ let num2: number = 200
 console.log('Personal information:', 'name' + name);
 console.log('Personal information:', 'age' + age.toString());
 
-
-@Entry
-@Component
-struct Index {
-  @State message: string = 'Hello World';
-
-  build() {
-    Row() {
-      Column() {
-        Text(this.message)
-          .fontSize(50)
-          .fontWeight(FontWeight.Bold)
-      }
-      .width('100%')
-    }
-    .height('100%')
-  }
-}
-///////////////////////////////////////////////////////////////
 //第二节：模板字符串的基本使用
 let str1: string = '1.1';
 let str2: string = '1.8a';
@@ -45,24 +26,6 @@ console.log('parseFloat', parseFloat(str1)) // 1.1
 console.log('parseFloat', parseFloat(str2)) // 1.8
 console.log('parseFloat', parseFloat(str3)) // NaN
 
-@Entry
-@Component
-struct Index {
-  @State message: string = 'Hello World';
-
-  build() {
-    Row() {
-      Column() {
-        Text(this.message)
-          .fontSize(50)
-          .fontWeight(FontWeight.Bold)
-      }
-      .width('100%')
-    }
-    .height('100%')
-  }
-}
-////////////////////////////////////////////
 //第三节：数字转字符串
 let money: number = 100
 console.log('toString:', money.toString())
@@ -86,4 +49,3 @@ struct Index {
     .height('100%')
   }
 }
-///////////////////////////////////////////////////////////
